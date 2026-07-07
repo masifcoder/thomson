@@ -6,7 +6,6 @@ body {
     font-family: "Google Sans", sans-serif;
 }
 .container {
-    border: 1px solid red;
     width: 1300px;
     margin: 0 auto;
 }
@@ -14,6 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0px;
 }
 .nav-links {
     display: flex;
@@ -23,6 +23,7 @@ body {
     color: rgb(21, 21, 21);
     padding: 5px 20px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 .nav-links li a:hover {
     color: #f44336;
@@ -30,7 +31,6 @@ body {
 
 #header {
     padding: 100px 0;
-    border: 1px solid black;
 }
 
 #header h1 {
@@ -50,7 +50,6 @@ body {
 
 #gallery {
     padding: 100px 0;
-    border: 2px solid blue;
 }
 .gallery-links {
     display: flex;
@@ -67,8 +66,69 @@ body {
 .gallery-links li a:hover {
     color: #f44336;
 }
+.gallery-links li a:first-child {
+    padding-left: 0;
+}
 .photos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 20px;
+}
+
+#services-section{
+    padding: 100px 0;
+}
+.sec-heading {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.sec-desc {
+    color: #818385;
+    margin-bottom: 20px;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.services .service {
+    width: 33.33%;
+    padding: 30px 20px;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+}
+.services .service i {
+    font-size: 30px;
+    color: #818385;
+}
+.services .service p {
+    color: gray;
+    line-height: 25px;
+}
+.service-desc h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+footer {
+    padding: 70px;
+    background-color: rgb(34, 34, 34);
+    color: #818385;
+}
+.footer-parent {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left p {
+    line-height: 30px;
+}
+.footer-icons {
+    display: flex;
+    gap: 30px;
+}
+.footer-icons a {
+    color: gray;
+    font-size: 25px;
 }
